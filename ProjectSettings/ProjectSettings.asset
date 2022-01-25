@@ -41,6 +41,12 @@ PlayerSettings:
     height: 1
   m_SplashScreenLogos: []
   m_VirtualRealitySplashScreen: {fileID: 0}
+  m_ShowUnitySplashAds: 0
+  m_AdsAndroidGameId: 
+  m_AdsIosGameId: 
+  m_ShowSplashAdsSlogan: 0
+  m_SloganImage: {fileID: 0}
+  m_SloganHeight: 150
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -118,6 +124,7 @@ PlayerSettings:
   vulkanNumSwapchainBuffers: 3
   vulkanEnableSetSRGBWrite: 0
   vulkanEnableLateAcquireNextImage: 0
+  useSecurityBuild: 0
   m_SupportedAspectRatios:
     4:3: 1
     5:4: 1
@@ -169,6 +176,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Standalone: com.Company.ProductName
+    iPhone: com.gmaker.cookingappletest
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 21
@@ -234,11 +242,11 @@ PlayerSettings:
   iOSRenderExtraFrameOnPause: 0
   iosCopyPluginsCodeInsteadOfSymlink: 0
   appleDeveloperTeamID: 
-  iOSManualSigningProvisioningProfileID: 
+  iOSManualSigningProvisioningProfileID: acd03fe5-6e43-4aca-9ec1-d582c641201f
   tvOSManualSigningProvisioningProfileID: 
-  iOSManualSigningProvisioningProfileType: 0
+  iOSManualSigningProvisioningProfileType: 1
   tvOSManualSigningProvisioningProfileType: 0
-  appleEnableAutomaticSigning: 0
+  appleEnableAutomaticSigning: 2
   iOSRequireARKit: 0
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
@@ -359,6 +367,7 @@ PlayerSettings:
       m_Kind: 1
       m_SubKind: 
   m_BuildTargetBatching: []
+  m_BuildTargetEncrypting: []
   m_BuildTargetGraphicsJobs:
   - m_BuildTarget: MacStandaloneSupport
     m_GraphicsJobs: 0
