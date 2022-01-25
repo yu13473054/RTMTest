@@ -59,5 +59,5 @@ sysinfo.txt
 crashlytics-build.properties
 
 #custom
-Assets/Plugins/RTM/IOS/libfpnn.a*
+#Assets/Plugins/RTM/IOS/libfpnn.a*
 
