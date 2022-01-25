@@ -59,6 +59,12 @@ public class Main : MonoBehaviour
         _time = 0;
     }
 
+    public void StopPlay()
+    {
+        RTMMgr.Inst.StopPlay();
+        Debug.Log("停止播放语音");
+    }
+
     private bool _startRecord = false;
     private float _time;
     private void Update()

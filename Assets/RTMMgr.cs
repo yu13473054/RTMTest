@@ -710,23 +710,23 @@ namespace PVP.Game
         {
             if (_client == null) return;
 #if UNITY_ANDROID || UNITY_IOS
-            _client.SpeechToText((resultText, resultLanguage, errorCode) =>
-            {
-                lock (lockObj)
-                {
-                    _callBackQueue.Enqueue(() =>
-                    {
-                        if (errorCode == com.fpnn.ErrorCode.FPNN_EC_OK)
-                        {
-                            callback(messageId, resultText);
-                        }
-                        else
-                        {
-                            Debug.LogError("RTM：SpeechToText error: " + errorCode);
-                        }
-                    });
-                }
-            }, url, lang);
+            // _client.SpeechToText((resultText, resultLanguage, errorCode) =>
+            // {
+            //     lock (lockObj)
+            //     {
+            //         _callBackQueue.Enqueue(() =>
+            //         {
+            //             if (errorCode == com.fpnn.ErrorCode.FPNN_EC_OK)
+            //             {
+            //                 callback(messageId, resultText);
+            //             }
+            //             else
+            //             {
+            //                 Debug.LogError("RTM：SpeechToText error: " + errorCode);
+            //             }
+            //         });
+            //     }
+            // }, url, lang);
 #else
             ////////桌面测试逻辑////////
             Main.Instance.StartCoroutine(Speech2Text_Test((l, s) =>
